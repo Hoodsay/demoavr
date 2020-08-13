@@ -1,0 +1,262 @@
+
+USART_test.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000030  00800100  0000014c  000001c0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000014c  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001f0  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000220  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  00000260  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a21  00000000  00000000  000002a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008f6  00000000  00000000  00000cc9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000039f  00000000  00000000  000015bf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000068  00000000  00000000  00001960  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000445  00000000  00000000  000019c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000e7  00000000  00000000  00001e0d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001ef4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ec e4       	ldi	r30, 0x4C	; 76
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 33       	cpi	r26, 0x30	; 48
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	49 c0       	rjmp	.+146    	; 0x148 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+#include "main.h"
+
+
+int main(void){
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	cd b7       	in	r28, 0x3d	; 61
+  be:	de b7       	in	r29, 0x3e	; 62
+  c0:	af 97       	sbiw	r28, 0x2f	; 47
+  c2:	0f b6       	in	r0, 0x3f	; 63
+  c4:	f8 94       	cli
+  c6:	de bf       	out	0x3e, r29	; 62
+  c8:	0f be       	out	0x3f, r0	; 63
+  ca:	cd bf       	out	0x3d, r28	; 61
+	
+	USART_Init(8);
+  cc:	88 e0       	ldi	r24, 0x08	; 8
+  ce:	90 e0       	ldi	r25, 0x00	; 0
+  d0:	2b d0       	rcall	.+86     	; 0x128 <USART_Init>
+	
+	unsigned char string[] = "That will does not kill us, makes us stronger.";
+  d2:	8f e2       	ldi	r24, 0x2F	; 47
+  d4:	e0 e0       	ldi	r30, 0x00	; 0
+  d6:	f1 e0       	ldi	r31, 0x01	; 1
+  d8:	de 01       	movw	r26, r28
+  da:	11 96       	adiw	r26, 0x01	; 1
+  dc:	01 90       	ld	r0, Z+
+  de:	0d 92       	st	X+, r0
+  e0:	8a 95       	dec	r24
+  e2:	e1 f7       	brne	.-8      	; 0xdc <main+0x24>
+	unsigned char *start = string;
+  e4:	8e 01       	movw	r16, r28
+  e6:	0f 5f       	subi	r16, 0xFF	; 255
+  e8:	1f 4f       	sbci	r17, 0xFF	; 255
+	
+    while (1) 
+    {
+		while (*start != 0) {
+			USART_Transmit(*start);
+  ea:	09 c0       	rjmp	.+18     	; 0xfe <main+0x46>
+  ec:	29 d0       	rcall	.+82     	; 0x140 <USART_Transmit>
+			++start;
+  ee:	0f 5f       	subi	r16, 0xFF	; 255
+  f0:	1f 4f       	sbci	r17, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  f2:	8f e1       	ldi	r24, 0x1F	; 31
+  f4:	9e e4       	ldi	r25, 0x4E	; 78
+  f6:	01 97       	sbiw	r24, 0x01	; 1
+  f8:	f1 f7       	brne	.-4      	; 0xf6 <main+0x3e>
+  fa:	00 c0       	rjmp	.+0      	; 0xfc <main+0x44>
+  fc:	00 00       	nop
+	unsigned char string[] = "That will does not kill us, makes us stronger.";
+	unsigned char *start = string;
+	
+    while (1) 
+    {
+		while (*start != 0) {
+  fe:	f8 01       	movw	r30, r16
+ 100:	80 81       	ld	r24, Z
+ 102:	81 11       	cpse	r24, r1
+			USART_Transmit(*start);
+			++start;
+			_delay_ms(10);
+		}
+		USART_Transmit(0x0d);
+ 104:	f3 cf       	rjmp	.-26     	; 0xec <main+0x34>
+ 106:	8d e0       	ldi	r24, 0x0D	; 13
+		USART_Transmit(0x0a);
+ 108:	1b d0       	rcall	.+54     	; 0x140 <USART_Transmit>
+ 10a:	8a e0       	ldi	r24, 0x0A	; 10
+ 10c:	19 d0       	rcall	.+50     	; 0x140 <USART_Transmit>
+ 10e:	ff ef       	ldi	r31, 0xFF	; 255
+ 110:	29 e6       	ldi	r18, 0x69	; 105
+ 112:	88 e1       	ldi	r24, 0x18	; 24
+ 114:	f1 50       	subi	r31, 0x01	; 1
+ 116:	20 40       	sbci	r18, 0x00	; 0
+ 118:	80 40       	sbci	r24, 0x00	; 0
+ 11a:	e1 f7       	brne	.-8      	; 0x114 <main+0x5c>
+ 11c:	00 c0       	rjmp	.+0      	; 0x11e <main+0x66>
+ 11e:	00 00       	nop
+		
+		start = string;
+ 120:	8e 01       	movw	r16, r28
+ 122:	0f 5f       	subi	r16, 0xFF	; 255
+ 124:	1f 4f       	sbci	r17, 0xFF	; 255
+ 126:	eb cf       	rjmp	.-42     	; 0xfe <main+0x46>
+
+00000128 <USART_Init>:
+#include "USART.h"
+
+void USART_Init(unsigned int speed) {
+	UBRR0H = (unsigned char) (speed >> 8);
+ 128:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+	UBRR0L = (unsigned char) speed;
+ 12c:	89 b9       	out	0x09, r24	; 9
+	UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
+ 12e:	8a b1       	in	r24, 0x0a	; 10
+ 130:	88 61       	ori	r24, 0x18	; 24
+ 132:	8a b9       	out	0x0a, r24	; 10
+	UCSR0B |= (1 << RXCIE0);
+ 134:	57 9a       	sbi	0x0a, 7	; 10
+	UCSR0A |= (1 << U2X0);
+ 136:	59 9a       	sbi	0x0b, 1	; 11
+	UCSR0C = (1 << USBS0) | (3 << UCSZ00);
+ 138:	8e e0       	ldi	r24, 0x0E	; 14
+ 13a:	80 93 95 00 	sts	0x0095, r24	; 0x800095 <__TEXT_REGION_LENGTH__+0x7e0095>
+ 13e:	08 95       	ret
+
+00000140 <USART_Transmit>:
+}
+
+void USART_Transmit(unsigned char data) {
+	while (!(UCSR0A & (1 << UDRE0)));
+ 140:	5d 9b       	sbis	0x0b, 5	; 11
+ 142:	fe cf       	rjmp	.-4      	; 0x140 <USART_Transmit>
+	UDR0 = data;
+ 144:	8c b9       	out	0x0c, r24	; 12
+ 146:	08 95       	ret
+
+00000148 <_exit>:
+ 148:	f8 94       	cli
+
+0000014a <__stop_program>:
+ 14a:	ff cf       	rjmp	.-2      	; 0x14a <__stop_program>
